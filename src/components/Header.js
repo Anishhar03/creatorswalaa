@@ -42,20 +42,20 @@ const Navbar = () => {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } z-50`}
       >
-        <div className="flex flex-col items-center gap-8 p-8">
-          <a href="#process" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
+        <div className="flex flex-col items-center gap-8 p-8 bg-slate-800">
+          <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Process
           </a>
-          <a href="#benefits" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
+          <a href="#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Brand
           </a>
-          <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
+          <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Services
           </a>
-          <a href="#portfolio" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
+          <a href="#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Portfolio
           </a>
-          <a href="#creators" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
+          <a href="#pathway" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Creators
           </a>
           <button className="bg-lime-400 text-black px-8 py-3 rounded-lg font-medium w-full max-w-xs">
