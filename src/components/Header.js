@@ -9,7 +9,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a className="text-2xl font-bold" href="/">
+          <a className="flex items-center text-2xl font-bold" href="/">
+            <img src="/logo.jpg" alt="Logo" className="w-20 h-20 mr-2" />
+            
             <span className="text-white">Creators</span>
             <span className="text-[rgb(185,253,80)]">Wala</span>
           </a>
@@ -38,9 +40,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-black/95 backdrop-blur-lg transform transition-transform duration-300 ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } z-50`}
+        className={`fixed inset-0 bg-black/95 backdrop-blur-lg transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} z-50`}
       >
         <div className="flex flex-col items-center gap-8 p-8 bg-slate-700">
           <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
