@@ -58,7 +58,7 @@ const Testimonials = () => {
           {/* Navigation Buttons */}
           <button 
             onClick={prevSlide}
-            className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-2 rounded-full hover:bg-green-500 transition-colors"
+            className="absolute left-0 sm:left-8 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-3 rounded-full hover:bg-green-500 transition-colors"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-6 h-6 text-black" />
@@ -66,7 +66,7 @@ const Testimonials = () => {
 
           <button 
             onClick={nextSlide}
-            className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-2 rounded-full hover:bg-green-500 transition-colors"
+            className="absolute right-1 sm:right-8 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-3 rounded-full hover:bg-green-500 transition-colors"
             aria-label="Next testimonial"
           >
             <ChevronRight className="w-6 h-6 text-black" />
@@ -117,16 +117,12 @@ const Testimonials = () => {
           </div>
 
           {/* Slide Indicators */}
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-4 mt-10">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  index === currentSlide 
-                    ? 'bg-green-400 w-6' 
-                    : 'bg-gray-600 hover:bg-gray-500'
-                }`}
+                className={`w-1 h-1 rounded-full transition-all ${index === currentSlide ? 'bg-green-400 w-4' : 'bg-gray-600 hover:bg-gray-500'}`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}

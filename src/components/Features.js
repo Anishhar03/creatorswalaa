@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import {
-  Rocket,
   Users,
-  RefreshCw,
   Infinity,
   Zap,
   Workflow,
@@ -132,7 +130,7 @@ const Features = () => {
               partner with you to elevate your brand to new heights.
             </p>
             <button className="bg-green-400 text-black px-6 py-2 rounded-full hover:bg-green-500">
-              See Pricing
+             <a href="#pricing">See Pricing</a>
             </button>
           </div>
         </div>

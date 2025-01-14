@@ -22,7 +22,7 @@ const Navbar = () => {
             <a href="#faq" className="text-gray-300 hover:text-lime-400 transition-colors">Portfolio</a>
             <a href="#pathway" className="text-gray-300 hover:text-lime-400 transition-colors">Creators</a>
             <button className="bg-lime-400 text-black px-6 py-2 rounded-lg font-medium hover:bg-lime-300 transition-colors">
-              Let's Talk
+              <a href="#faq">Let's Talk</a>
             </button>
           </div>
 
