@@ -42,7 +42,7 @@ const Navbar = () => {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } z-50`}
       >
-        <div className="flex flex-col items-center gap-8 p-8 bg-slate-600">
+        <div className="flex flex-col items-center gap-8 p-8 bg-slate-700">
           <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Process
           </a>

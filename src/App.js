@@ -6,6 +6,7 @@ import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Pathway from "./components/Pathway";
+import Roadmap from "./components/Roadmap";
 
 const App = () => {
   return (
@@ -25,6 +26,10 @@ const App = () => {
         {/* Pathway Section */}
         <section id="pathway">
           <Pathway />
+        </section>
+
+        <section id="roadmap">
+          <Roadmap/>
         </section>
 
         {/* Features Section */}

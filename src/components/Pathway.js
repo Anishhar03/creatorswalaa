@@ -51,12 +51,6 @@ const ProductionServices = () => {
           </div>
         ))}
       </div>
-
-      {/* Services Pathway */}
-      <div className="relative max-w-4xl mx-auto">
-        {/* Vertical Line for Pathway */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-gray-700 hidden md:block"></div>
-      </div>
     </div>
   );
 };
