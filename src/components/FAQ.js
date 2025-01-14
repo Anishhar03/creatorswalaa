@@ -112,20 +112,20 @@ const FAQAndFooter = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
               {/* Navigation */}
               <div className="space-y-4">
-              <a href="#hero" className="text-gray-300 hover:text-white transition-colors">Process</a>
-              <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Brand</a>
-              <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Services</a>
-              <a href="#faq" className="text-gray-300 hover:text-white transition-colors">Portfolio</a>
-              <a href="#pathway" className="text-gray-300 hover:text-white transition-colors">Creators</a>
+              <a href="#hero" className="text-gray-300 hover:text-lime-400 transition-colors">Process</a><br/>
+              <a href="#testimonials" className="text-gray-300 hover:text-lime-400 transition-colors">Brand</a><br/>
+              <a href="#pricing" className="text-gray-300 hover:text-lime-400 transition-colors">Services</a><br/>
+              <a href="#faq" className="text-gray-300 hover:text-lime-400 transition-colors">Portfolio</a><br/>
+              <a href="#pathway" className="text-gray-300 hover:text-lime-400 transition-colors">Creators</a><br/>
               </div>
 
               {/* Contact Info */}
               <div className="space-y-4">
-                <a href="mailto:info@brand.com" className="flex items-center gap-2 text-gray-400 hover:text-white">
+                <a href="mailto:info@brand.com" className="flex items-center gap-2 text-gray-400 hover:text-lime-400">
                   <Mail className="w-4 h-4" />
                   <span>info@brand.com</span>
                 </a>
-                <a href="tel:(001) 233-5435" className="flex items-center gap-2 text-gray-400 hover:text-white">
+                <a href="tel:(001) 233-5435" className="flex items-center gap-2 text-gray-400 hover:text-lime-400">
                   <Phone className="w-4 h-4" />
                   <span>(001) 233-5435</span>
                 </a>
@@ -133,13 +133,13 @@ const FAQAndFooter = () => {
 
               {/* Social Links */}
               <div className="flex gap-4">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-lime-400">
                   <Globe className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-lime-400">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-lime-400">
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>

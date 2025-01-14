@@ -9,18 +9,18 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a className="text-2xl font-bold h-17 w-38 mt-15.06 ml-57.14" href="/">
+          <a className="text-2xl font-bold" href="/">
             <span className="text-white">Creators</span>
             <span className="text-[rgb(185,253,80)]">Wala</span>
           </a>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#hero" className="text-gray-300 hover:text-white transition-colors">Process</a>
-            <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Brand</a>
-            <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Services</a>
-            <a href="#faq" className="text-gray-300 hover:text-white transition-colors">Portfolio</a>
-            <a href="#pathway" className="text-gray-300 hover:text-white transition-colors">Creators</a>
+            <a href="#hero" className="text-gray-300 hover:text-lime-400 transition-colors">Process</a>
+            <a href="#testimonials" className="text-gray-300 hover:text-lime-400 transition-colors">Brand</a>
+            <a href="#pricing" className="text-gray-300 hover:text-lime-400 transition-colors">Services</a>
+            <a href="#faq" className="text-gray-300 hover:text-lime-400 transition-colors">Portfolio</a>
+            <a href="#pathway" className="text-gray-300 hover:text-lime-400 transition-colors">Creators</a>
             <button className="bg-lime-400 text-black px-6 py-2 rounded-lg font-medium hover:bg-lime-300 transition-colors">
               Let's Talk
             </button>
@@ -42,7 +42,7 @@ const Navbar = () => {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } z-50`}
       >
-        <div className="flex flex-col items-center gap-8 p-8 bg-slate-800">
+        <div className="flex flex-col items-center gap-8 p-8 bg-slate-800 h-full">
           <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Process
           </a>
