@@ -9,7 +9,10 @@ import Pathway from "./components/Pathway";
 
 const App = () => {
   return (
-    <div className="bg-darkGreen text-white">
+    <div
+      className="bg-black text-white min-h-screen w-full"
+      style={{ overflowX: "hidden" }}
+    >
       {/* Header */}
       <Header />
 

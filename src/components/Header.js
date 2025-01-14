@@ -31,7 +31,7 @@ const Navbar = () => {
             className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6 mr-4" />}
           </button>
         </div>
       </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } z-50`}
       >
-        <div className="flex flex-col items-center gap-8 p-8 bg-slate-800 h-full">
+        <div className="flex flex-col items-center gap-8 p-8 bg-slate-600">
           <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Process
           </a>

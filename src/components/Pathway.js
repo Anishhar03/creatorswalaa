@@ -57,9 +57,6 @@ const ProductionServices = () => {
 
       {/* Services Section with Pathway */}
       <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 relative">
-        <div className="text-4xl font-bold">Branding</div>
-        <div className="text-4xl font-bold">Storytelling</div>
-        <div className="text-4xl font-bold">Editing</div>
 
         {/* Vertical Line */}
         <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gray-700 hidden md:block" />

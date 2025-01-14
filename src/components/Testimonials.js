@@ -58,7 +58,7 @@ const Testimonials = () => {
           {/* Navigation Buttons */}
           <button 
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 md:-translate-x-16 z-10 bg-green-400 p-2 rounded-full hover:bg-green-500 transition-colors"
+            className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-2 rounded-full hover:bg-green-500 transition-colors"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-6 h-6 text-black" />
@@ -66,14 +66,14 @@ const Testimonials = () => {
 
           <button 
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 md:translate-x-16 z-10 bg-green-400 p-2 rounded-full hover:bg-green-500 transition-colors"
+            className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-2 rounded-full hover:bg-green-500 transition-colors"
             aria-label="Next testimonial"
           >
             <ChevronRight className="w-6 h-6 text-black" />
           </button>
 
           {/* Testimonial Card */}
-          <div className="bg-gray-900 rounded-2xl p-8 md:p-12">
+          <div className="bg-gray-900 rounded-2xl p-8 md:p-12 relative z-0">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
                 {/* Company Logo/Name */}
