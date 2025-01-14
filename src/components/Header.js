@@ -5,15 +5,12 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-sm z-40">
+    <nav className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-sm z-40 w-full">
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a className="flex items-center text-2xl font-bold" href="/">
-            <img src="/logo.jpg" alt="Logo" className="w-20 h-20 mr-2" />
-            
-            <span className="text-white">Creators</span>
-            <span className="text-[rgb(185,253,80)]">Wala</span>
+          <a className="flex items-center text-l font-bold" href="/">
+            <img src="/logo.jpg" alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mr-2" />
           </a>
 
           {/* Navigation Links */}
