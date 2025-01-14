@@ -112,11 +112,11 @@ const FAQAndFooter = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
               {/* Navigation */}
               <div className="space-y-4">
-                <a href="#" className="block text-gray-400 hover:text-white">Process</a>
-                <a href="#" className="block text-gray-400 hover:text-white">Benefits</a>
-                <a href="#" className="block text-gray-400 hover:text-white">Services</a>
-                <a href="#" className="block text-gray-400 hover:text-white">Portfolio</a>
-                <a href="#" className="block text-gray-400 hover:text-white">FAQ</a>
+              <a href="#hero" className="text-gray-300 hover:text-white transition-colors">Process</a>
+              <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Brand</a>
+              <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Services</a>
+              <a href="#faq" className="text-gray-300 hover:text-white transition-colors">Portfolio</a>
+              <a href="#pathway" className="text-gray-300 hover:text-white transition-colors">Creators</a>
               </div>
 
               {/* Contact Info */}

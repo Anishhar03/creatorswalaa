@@ -6,18 +6,43 @@ import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Pathway from "./components/Pathway";
+
 const App = () => {
   return (
     <div className="bg-darkGreen text-white">
+      {/* Header */}
       <Header />
-      <Hero/>
+
+      {/* Hero Section */}
+      <section id="hero">
+        <Hero />
+      </section>
+
       <main>
-      <Pathway/>
-        <Features />
-        <Testimonials />
-        
-        <Pricing />
-        <FAQ />
+        {/* Pathway Section */}
+        <section id="pathway">
+          <Pathway />
+        </section>
+
+        {/* Features Section */}
+        <section id="features">
+          <Features />
+        </section>
+
+        {/* Testimonials Section */}
+        <section id="testimonials">
+          <Testimonials />
+        </section>
+
+        {/* Pricing Section */}
+        <section id="pricing">
+          <Pricing />
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq">
+          <FAQ />
+        </section>
       </main>
     </div>
   );

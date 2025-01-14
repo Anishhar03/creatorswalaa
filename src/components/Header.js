@@ -16,11 +16,11 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#process" className="text-gray-300 hover:text-white transition-colors">Process</a>
-            <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">Brand</a>
-            <a href="#services" className="text-gray-300 hover:text-white transition-colors">Services</a>
-            <a href="#portfolio" className="text-gray-300 hover:text-white transition-colors">Portfolio</a>
-            <a href="#creators" className="text-gray-300 hover:text-white transition-colors">Creators</a>
+            <a href="#hero" className="text-gray-300 hover:text-white transition-colors">Process</a>
+            <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Brand</a>
+            <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Services</a>
+            <a href="#faq" className="text-gray-300 hover:text-white transition-colors">Portfolio</a>
+            <a href="#pathway" className="text-gray-300 hover:text-white transition-colors">Creators</a>
             <button className="bg-lime-400 text-black px-6 py-2 rounded-lg font-medium hover:bg-lime-300 transition-colors">
               Let's Talk
             </button>
