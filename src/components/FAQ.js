@@ -90,9 +90,18 @@ const FAQAndFooter = () => {
           <p className="text-gray-400 mb-6">
             Jump on in membership and start requesting designs right away!
           </p>
-          <button className="bg-green-400 text-black px-6 py-3 rounded-full hover:bg-green-500 transition-colors">
-            Fill the form
-          </button>
+          <button
+  className="bg-green-400 text-black px-6 py-3 rounded-full hover:bg-green-500 transition-colors"
+  onClick={() =>
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSezUcCVFcJuUe_-uJvkZXTV5gUezq_y1oGW2NYl2FmJJgdiXg/viewform?usp=header",
+      "_blank"
+    )
+  }
+>
+  Fill the form
+</button>
+
         </div>
       </section>
 

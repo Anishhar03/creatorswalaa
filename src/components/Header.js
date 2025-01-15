@@ -6,11 +6,11 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-black/90 backdrop-blur-sm z-40 w-full">
-      <div className="container mx-auto px-4 sm:px-6 py-4">
+      <div className="container mx-auto px-4 sm:px-6 py-2">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a className="flex items-center text-l font-bold" href="/">
-            <img src="/logo.jpg" alt="Logo" className="w-16 sm:w-20 h-16 sm:h-20 mr-2" />
+            <img src="/logo.jpg" alt="Logo" className="w-10 sm:w-16 h-12 sm:h-16 mr-2" />
           </a>
 
           {/* Navigation Links */}
@@ -20,13 +20,13 @@ const Navbar = () => {
             <a href="#pricing" className="text-gray-300 hover:text-lime-400 transition-colors">Services</a>
             <a href="#faq" className="text-gray-300 hover:text-lime-400 transition-colors">Portfolio</a>
             <a href="#pathway" className="text-gray-300 hover:text-lime-400 transition-colors">Creators</a>
-            <button className="bg-lime-400 text-black px-6 py-2 rounded-lg font-medium hover:bg-lime-300 transition-colors">
+            <button className="bg-lime-400 text-black px-5 py-2 rounded-lg font-medium hover:bg-lime-300 transition-colors">
               <a href="#faq">Let's Talk</a>
             </button>
           </div>
 
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -39,7 +39,15 @@ const Navbar = () => {
       <div
         className={`fixed inset-0 bg-black/95 backdrop-blur-lg transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} z-50`}
       >
-        <div className="flex flex-col items-center gap-8 p-8 bg-slate-700">
+        <div className="flex flex-col items-center gap-8 p-6 bg-slate-700">
+          {/* Close Icon */}
+          <button
+            className="self-end text-white mb-4"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <X className="w-8 h-8" />
+          </button>
+
           <a href="#hero" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Process
           </a>
@@ -55,7 +63,7 @@ const Navbar = () => {
           <a href="#pathway" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white hover:text-lime-400 transition-colors">
             Creators
           </a>
-          <button className="bg-lime-400 text-black px-8 py-3 rounded-lg font-medium w-full max-w-xs">
+          <button className="bg-lime-400 text-black px-6 py-3 rounded-lg font-medium w-full max-w-xs">
             Let's Talk
           </button>
         </div>
