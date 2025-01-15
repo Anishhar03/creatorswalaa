@@ -10,8 +10,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a className="flex items-center text-l font-bold" href="/">
-            <img src="/logo.jpg" alt="Logo" className="w-10 sm:w-16 h-12 sm:h-16 mr-2" />
-          </a>
+  <span className="text-white text-2xl sm:text-3xl font-extrabold">
+    Creators<span style={{ color: 'rgba(185, 253, 80, 1)' }}>Wala</span>
+  </span>
+</a>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
