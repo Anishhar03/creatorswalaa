@@ -40,7 +40,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20 bg-black">
+    <section className="py-20 bg-black relative">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -54,24 +54,7 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonial Slider */}
-        <div className="relative max-w-5xl mx-auto">
-          {/* Navigation Buttons */}
-          <button 
-            onClick={prevSlide}
-            className="absolute left-0 sm:left-8 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-3 rounded-full hover:bg-green-500 transition-colors"
-            aria-label="Previous testimonial"
-          >
-            <ChevronLeft className="w-6 h-6 text-black" />
-          </button>
-
-          <button 
-            onClick={nextSlide}
-            className="absolute right-1 sm:right-8 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-3 rounded-full hover:bg-green-500 transition-colors"
-            aria-label="Next testimonial"
-          >
-            <ChevronRight className="w-6 h-6 text-black" />
-          </button>
-
+        <div className="max-w-5xl mx-auto">
           {/* Testimonial Card */}
           <div className="bg-gray-900 rounded-2xl p-8 md:p-12 relative z-0">
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -129,6 +112,23 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
+
+      {/* Navigation Buttons */}
+      <button 
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-3 rounded-full hover:bg-green-500 transition-colors"
+        aria-label="Previous testimonial"
+      >
+        <ChevronLeft className="w-6 h-6 text-black" />
+      </button>
+
+      <button 
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-green-400 p-3 rounded-full hover:bg-green-500 transition-colors"
+        aria-label="Next testimonial"
+      >
+        <ChevronRight className="w-6 h-6 text-black" />
+      </button>
     </section>
   );
 };
